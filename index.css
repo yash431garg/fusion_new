@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: #f4b317;
+  color: white;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+.navbar_main1 {
+  width: 50%;
+}
+.navbar_main_h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.5em;
+}
+
+.navbar_main2 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar_main_ul {
+  list-style: none;
+  padding: 0px 15px 0px 15px;
+  cursor: pointer;
+}
+.navbar_main_ul_icon {
+  display: none;
+  cursor: pointer;
+}
+.navbar_main_ul > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: larger;
+}
+.navbar_main_ul :hover {
+  font-weight: bold;
+  text-shadow: 2px 2px #b9a9a2;
+}
+.openbtn {
+  display: none;
+}
+.header {
+  height: 95vh;
+  background-image: url(./img/back_img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+}
+.header_img {
+  width: 100vw;
+  height: 90vh;
+}
+.header_text {
+  font-size: 3em;
+  padding: 80px 0px 0px 140px;
+  width: 45%;
+}
+.header_text1 {
+  color: #524d4b;
+  font-family: "Dancing Script", cursive;
+}
+.header_text2 {
+  color: #b9a9a2;
+  font-family: "Dancing Script", cursive;
+}
+.header_text > p {
+  font-size: 3rem;
+  color: #b9a9a2;
+  font-family: "Montserrat", sans-serif;
+}
+.header_text > .siddesh {
+  position: relative;
+  top: 50px;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.tips {
+  height: 70vh;
+  font-family: "Montserrat", sans-serif;
+  color: #524d4b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tips > img {
+  width: 50vh;
+  height: auto;
+}
+.tips_detail > .tips_founder {
+  font-size: 2.5em;
+}
+.tips_detail > .tips_contact {
+  font-size: 2em;
+}
+.tips_detail > .tips_contact {
+  color: #524d4b;
+  text-align: center;
+}
+.tips_lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 20px;
+}
+.tips_list {
+  color: #f07b3f;
+  list-style: none;
+  padding-right: 20px;
+  font-size: 1.5em;
+}
+.tips_list :hover {
+  color: #524d4b;
+}
+
+.slider_main {
+  position: relative;
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.slider > img {
+  width: 90vw;
+  height: auto;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  border: 1px solid #364f6b;
+  background-color: #f0f5f9;
+  margin: 2px;
+  display: inline-block;
+  position: relative;
+  bottom: 50px;
+}
+.active {
+  background-color: #222831;
+  color: blue;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.service_main {
+  text-align: center;
+  margin: 20px;
+}
+.service {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services {
+  background-color: #3f3d56;
+  color: #f5f5f5;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.service_img {
+  width: 35vw;
+  height: auto;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  background-color: #2f2e41;
+}
+.contact_main {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.address {
+  padding: 50px;
+}
+.address_icon {
+  font-size: 50px;
+  color: white;
+}
+.contact_email {
+  padding: 50px;
+}
+.contact_email_ul {
+  list-style: none;
+}
+.contact_email_li {
+  text-decoration: none;
+}
+.team {
+  background-repeat: repeat;
+
+  padding: 50px;
+}
+.team > h1 {
+  text-align: center;
+  margin: 10px;
+}
+.card_infom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card_info {
+  width: 50vh;
+  height: 50vh;
+  background-color: rgb(231, 231, 231);
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+.card_info:hover {
+  box-shadow: -40px 4px 20px -40px rgba(0, 0, 0, 0.75);
+}
+
+.foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  color: white;
+  background-color: #2f2e41;
+}
+@media screen and (max-width: 700px) {
+  .header {
+    overflow: hidden;
+    height: 95vh;
+  }
+  .header_text {
+    font-size: 2em;
+    padding: 80px 0px 0px 140px;
+    width: 100%;
+  }
+
+  .tips {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .tips_detail > .tips_founder {
+    font-size: 1.5em;
+  }
+  .tips_detail > .tips_contact {
+    font-size: 1.5em;
+  }
+  .service {
+    display: flex;
+    flex-direction: column;
+  }
+  .service_img {
+    display: none;
+  }
+  .navbar_main_h1 {
+    font-size: 1em;
+  }
+
+  .card_infom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card_info {
+    margin: 20px;
+  }
+
+  .navbar_main_ul_icon {
+    display: block;
+    padding-right: 20px;
+    font-size: 1.5rem;
+  }
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #f4b317;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 15px;
+    display: block;
+    z-index: 0;
+  }
+
+  .navbar_main2 {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    right: 0px;
+    background-color: #f4b317;
+    overflow-x: hidden;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .navbar_main_ul {
+    display: block;
+    padding: 20px;
+  }
+
+  .navbar_main2 .navbar_main_ul_icon {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 36px;
+  }
+}

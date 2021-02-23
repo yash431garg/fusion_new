@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fusion</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar_main1">
+        <p class="navbar_main_h1">🕺 Live in dance 🕺</p>
+      </div>
+      <ul class="navbar_main2" id="mySidepanel">
+        <li onclick="closeNav()" class="navbar_main_ul_icon">×</li>
+        <li class="navbar_main_ul">
+          <a
+            style="text-shadow: 2px 2px #b9a9a2"
+            class="navbar_main2_home"
+            href="/"
+            >Home</a
+          >
+        </li>
+        <li onclick="closeNav()" class="navbar_main_ul">
+          <a href="#service_id">Services</a>
+        </li>
+        <li onclick="closeNav()" class="navbar_main_ul">
+          <a href="#contact_id">Contact</a>
+        </li>
+        <li onclick="closeNav()" class="navbar_main_ul">
+          <a href="#team_id">Team</a>
+        </li>
+      </ul>
+      <button class="openbtn" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="header_id" class="header">
+      <div class="header_text">
+        <h1 class="header_text1">Fusion</h1>
+        <h1 class="header_text2">Studio</h1>
+        <p>Lets dance and enjoy it with us.</p>
+      </div>
+    </div>
+    <div class="tips">
+      <img src="./img/logo.png" alt="logo" class="tips_logo" />
+      <div class="tips_detail">
+        <p class="tips_founder">Director/Founder:Siddesh Malik</p>
+        <p class="tips_contact">Contact me:</p>
+        <ul class="tips_lists">
+          <li class="tips_list"><i class="fab fa-instagram-square"></i></li>
+          <li class="tips_list"><i class="fab fa-facebook-square"></i></li>
+          <li class="tips_list"><i class="fab fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+    <hr style="border: 1px solid #b9a9a2" noshade="" />
+    <div class="service_main" id="service_id">
+      <h1>Services(What we offer)</h1>
+      <div class="service">
+        <div class="service_info">
+          <div class="services">
+            <h3>Advance/Beginer classes</h3>
+          </div>
+          <div class="services">
+            <h3>Breakdance/Hip-Hop</h3>
+          </div>
+          <div class="services">
+            <h3>Lyrical/Wedding dance</h3>
+          </div>
+          <div class="services">
+            <h3>Youth/Choreo classes</h3>
+          </div>
+          <div class="services">
+            <h3>Bhanjra/punjabi dance</h3>
+          </div>
+          <div class="services">
+            <h3>Music video choreo</h3>
+          </div>
+        </div>
+        <img src="./img/services.png" alt="services" class="service_img" />
+      </div>
+    </div>
+    <hr style="border: 1px solid #b9a9a2" noshade="" />
+
+    <div id="slider_main_id" class="slider_main">
+      <div class="slider slider1 fade">
+        <img src="./img/img1.jpg" alt="" />
+      </div>
+      <div class="slider slider2 fade">
+        <img src="./img/img2.jpg" alt="" />
+      </div>
+      <div class="slider slider3 fade">
+        <img src="./img/img3.jpg" alt="" />
+      </div>
+
+      <div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <div id="team_id" class="team">
+      <h1>Our Team</h1>
+      <div class="card_infom">
+        <div class="card_info"></div>
+        <div class="card_info"></div>
+        <div class="card_info"></div>
+      </div>
+    </div>
+
+    <div id="contact_id" class="contact">
+      <h2>Contact us</h2>
+      <div class="contact_main">
+        <div class="address">
+          <h2>Address</h2>
+          <p class="address_icon">
+            <i class="fas fa-search-location"></i>
+          </p>
+          <p>Water works road_front of old electricity office.</p>
+          <p>Narwana,Haryana, India</p>
+        </div>
+        <!-- <div class="contact_email">
+          <h2>Connect us</h2>
+          <ul class="contact_email_ul">
+            <li>
+              <a href="" class="contact_email_li"
+                ><i class="fas fa-envelope-open"></i> Email
+              </a>
+            </li>
+            <li>
+              <a href="" class="contact_email_li"
+                ><i class="fab fa-instagram"></i> Instagram
+              </a>
+            </li>
+            <li>
+              <a href="" class="contact_email_li"
+                ><i class="fab fa-facebook-square"></i> Facebook
+              </a>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+    <hr style="border: 1px solid #b9a9a2" noshade="" />
+    <footer class="foot">
+      <p>Made by Yash Garg with love❤️❤️❤️</p>
+      <p>©️Copyright fusion studio</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
