@@ -249,6 +249,10 @@
   background-color: rgb(231, 231, 231);
   box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
 }
+.card_info > img {
+  width: 50%;
+  height: auto;
+}
 .card_info:hover {
   box-shadow: -40px 4px 20px -40px rgba(0, 0, 0, 0.75);
 }
